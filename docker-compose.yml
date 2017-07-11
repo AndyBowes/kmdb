@@ -1,10 +1,13 @@
-#movieservice:
-#  build: .
-#  command: java -jar kmdb-restful-service.jar
-#  ports:
-#    - "1080:1080"
-#  links:
-#    - mongodb
+movieservice:
+  build: .
+  command: java -jar kmdb-restful-service.jar
+  ports:
+    - "8080:8080"
+  links:
+    - mongodb
+  environment:
+    - spring.data.mongodb.host=mongodb
+    - spring.data.mongodb.port=27017
 
 mongodb:
   image: mongo:latest
