@@ -1,6 +1,6 @@
 movieservice:
   build: .
-  command: java -jar kmdb-restful-service.jar
+  command: java -jar kmdb.jar
   ports:
     - "8080:8080"
   links:
