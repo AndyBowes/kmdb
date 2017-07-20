@@ -10,3 +10,4 @@ data class Movie(@Id val id: String,
                  val genres: List<String>,
                  val keywords: List<String>,
                  val imdbUrl: String)
+
